@@ -1,0 +1,9 @@
+.grid{
+}
+
+.box{
+    margin: 0;
+    border: solid black 3px;
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row">
+
+{{gc.test}}
+<form ng-submit="gc.createGrid(gc.size)">
+        <input type="number" placeholder="Size of square grid" ng-model="gc.size">
+        <button type="submit">Build Grid</button>
+        </form>
+<div ng-repeat="row in gc.newGrid">
+<ui class="list-inline">
+    <li ng-repeat="col in row"><span class="box">x:{{col.x}}, y:{{col.y}}</span></li>
+</ui>
+</div>
+</div>
+</div>
